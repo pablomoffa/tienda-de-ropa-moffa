@@ -1,0 +1,536 @@
+/* Paleta de colores: https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formato de header */
+.nav-container {
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* Barra de navegación */
+.nav-content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Formato del nombre de la marca */
+.brand {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    color: black;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 1em;
+}
+
+/* Menú de navegación */
+.nav-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Enlaces de navegación */
+.nav-item {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.2em;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: white;
+}
+
+/* Fondo debajo de header */
+.background-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 43.75em;
+    background-image: url('resources/foto-portada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Caja dentro de la primera sección */
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 35%;
+    height: 30%;
+    background-color: #457B9D;
+    color: #1D3557;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.6em 0;
+}
+
+h1 {
+    font-family: 'Candara';
+    font-size: xx-large;
+    margin: auto 20%;
+}
+
+/* Botón <ver más> */
+.see-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20%;
+    height: 15%;
+    color: black;
+    font-family: 'Staatliches', cursive;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 0.6em;
+}
+
+/* Productos destacados */
+.featured-container {
+    background-color: white;
+    padding: 3em 0 0 0;
+}
+
+/* Productos destacados. Título. */
+.featured-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.8em;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Contenedor de los productos */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    justify-items: center;
+    padding: 2em 5%;
+}
+
+/* Contenedor del producto indvidual */
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0.063em;
+    justify-items: center;
+    align-items: center;
+    width: 25em;
+    height: 43.75em;
+    border-style: dashed;
+    border-width: 1px;
+    overflow: hidden;
+    margin: 1.5em 0;
+}
+
+/* Imagen del producto */
+.product-image {
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Descripción del producto */
+.product-text {
+    text-align: center;
+    font-family: 'Nunito', cursive;
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* Precio del producto */
+.product-price {
+    text-align: center;
+    font-family: 'Nunito', cursive;
+    font-size: medium;
+}
+
+/* Botón <añadir al carrito> */
+.add-to-cart-button,
+.send-button {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    background-color: #457B9D;
+    padding: 0.3em 0.6em;
+    border-radius: 0.6em;
+}
+
+/* Formato de footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #0E1111;
+}
+
+/* Texto de copyright */
+.footer-text {
+    margin: auto;
+    padding-left: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', cursive;
+    color: white;
+    text-align: center;
+}
+
+/* Sección de redes sociales */
+.follow-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1.25em;
+}
+
+/* Seguinos */
+.follow-us-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: 'Candara';
+    color: white;
+    padding-right: 2em;
+}
+
+/* Contenedor de íconos de redes sociales */
+.follow-us-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 2em;
+}
+
+/* Íconos de redes sociales */
+.follow-us-icon {
+    max-width: 100%;
+    height: auto;
+    padding: 0.125em;
+}
+
+/* Barra de los html */
+.us-background,
+.products-background,
+.faq-background,
+.location-background,
+.contact-background {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 5em;
+    background-color: #0E1111;
+}
+
+.us-background div,
+.products-background div,
+.faq-background div,
+.location-background div,
+.contact-background div {
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0 2em;
+}
+
+/* Formato del texto en la barra */
+.us-text,
+.products-text,
+.faq-text,
+.location-text,
+.contact-text {
+    margin: auto;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    font-size: 2em;
+    color: white;
+}
+
+/* Bloque que contiene al artículo completo */
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28em, 1fr));
+    justify-items: center;
+    gap: 2em;
+    padding: 3em 9em;
+}
+
+/* Contiene el texto y la imagen del artículo */
+.article-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28em, 1fr));
+    gap: 2em;
+    margin: 2em;
+}
+
+/* Contenedor del texto del artículo */
+.article-text-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+/* Formato del texto del artículo */
+.article-text {
+    display: flex;
+    vertical-align: middle;
+    margin: auto;
+    font-family: 'Nunito', cursive;
+    text-align: justify;
+}
+
+/* Contenedor de la imagen del artículo */
+.article-image-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+}
+
+/* Sección. <¿Por qué elegirnos?> */
+.choosing-us-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr;
+    grid-column-gap: 0;
+    grid-row-gap: 1em;
+    justify-items: center;
+    padding: 1.5em 3em 4.5em 3em;
+}
+
+/* Formato. <¿Por qué elegirnos?> */
+.choosing-us-text {
+    display: grid;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.063em;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Contenedor de motivos */
+.motives-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-column: 1em;
+    gap: 1em;
+    justify-items: center;
+    width: 95%;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+/* Contenedor del motivo */
+.motives-container div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 5em);
+    justify-items: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+/* Íconos del motivo */
+.motives-container div img {
+    display: grid;
+    justify-items: center;
+    margin: auto;
+}
+
+/* Título del motivo */
+.motives-container div h3 {
+    display: grid;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.063em;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Descripción del motivo */
+.motives-text {
+    display: grid;
+    align-items: center;
+    margin: auto;
+    font-family: 'Nunito', cursive;
+    text-align: justify;
+}
+
+/* Contenedor de preguntas frecuentes */
+.faq-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+/* Formato de las preguntas */
+.faq-question {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 2em 0 1.25em 0;
+    font-family: 'Staatliches', cursive;
+}
+
+/* Formato de las respuestas */
+.faq-answer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 0.5em 0;
+    font-family: 'Nunito', cursive;
+}
+
+/* Separación entre la última pregunta y footer */
+.faq-answer-padding-bottom {
+    padding-bottom: 2em;
+}
+
+/* Contenedor de los locales */
+.stores-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(37.5em, 1fr));
+    grid-column-gap: 2em;
+    justify-items: center;
+    align-items: center;
+    padding: 4em 6em;
+}
+
+/* Contenedor del local indvidual */
+.store-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 37.5em;
+    height: 34em;
+    border-style: dashed;
+    border-width: 0.063em;
+    overflow: hidden;
+    margin: 1.5em 0;
+}
+
+/* Contenedor del mapa */
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%;
+    z-index: 0;
+}
+
+/* Responsive iframe */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Formato de la dirección */
+.store-location {
+    font-family: 'Nunito', cursive;
+}
+
+/* Formulario */
+.form-container {
+    margin: 1.25em 0;
+}
+
+/* Ubicación del formulario */
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+}
+
+/* Título del formulario */
+.form-content h2 {
+    text-align: center;
+    font-family: 'Nunito', cursive;
+    padding-bottom: 1.25em;
+}
+
+/* Cajas del formulario */
+.name-box,
+.email-box,
+.subject-box {
+    display: flex;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    max-width: 23em;
+    min-width: 31em;
+    border-style: solid;
+    border-width: 0.063em;
+    color: #6F6F6F;
+}
+
+/* Caja de mensaje */
+.message-box {
+    display: flex;
+    padding: 0.5em;
+    margin: 0.5em auto;
+    max-width: 23em;
+    min-width: 31em;
+    height: 19em;
+    border-style: solid;
+    border-width: 0.063em;
+    color: #6F6F6F;
+}
+
+/* Botón para enviar */
+.send-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 0;
+}
