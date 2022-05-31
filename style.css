@@ -33,7 +33,19 @@
     text-decoration: none;
     text-transform: lowercase;
     padding: 1em;
+    animation: brand 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
+@keyframes brand {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
 
 /* Menú de navegación */
 .nav-item-container {
@@ -47,13 +59,23 @@
 .nav-item {
     display: flex;
     justify-content: space-around;
-    padding: 2.2em;
+    margin: 2.2em;
     vertical-align: middle;
     text-decoration: none;
     color: black;
     font-size: 1.25em;
     font-family: 'Staatliches', cursive;
     text-transform: uppercase;
+    background-image: linear-gradient(transparent 0%, transparent 90%, black 90%, black 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+.nav-item:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
 }
 
 main {
@@ -108,7 +130,14 @@ h1 {
     font-size: 1em;
     text-decoration: none;
     background-color: white;
-    border-radius: 0.6em;
+    box-shadow: #1D3557 0.25em 0.25em 0;
+    border-radius: 0.5em;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.see-more-button:hover {
+    transform: translateY(0.25em) translateX(0.25em);
+    box-shadow: #1D3557 0 0 0;
 }
 
 /* Productos destacados */
@@ -185,6 +214,15 @@ h1 {
     background-color: #457B9D;
     padding: 0.3em 0.6em;
     border-radius: 0.6em;
+    box-shadow: #1D3557 0.25em 0.25em 0;
+    border-radius: 0.5em;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.add-to-cart-button:hover,
+.send-button:hover {
+    transform: translateY(0.25em) translateX(0.25em);
+    box-shadow: #1D3557 0 0 0;
 }
 
 /* Formato de footer */
