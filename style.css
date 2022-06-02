@@ -312,11 +312,6 @@
 
 /* Formato de las preguntas */
 .faq-question {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    padding: 2em 0 1.25em 0;
     font-family: 'Staatliches', cursive;
 }
 
@@ -400,10 +395,8 @@
 }
 
 /* Título del formulario */
-.form-content h2 {
-    text-align: center;
+.contact-us {
     font-family: 'Nunito', cursive;
-    padding-bottom: 1.25em;
 }
 
 /* Cajas del formulario */
@@ -437,5 +430,6 @@
 .send-button-container {
     display: flex;
     justify-content: center;
-    padding: 1.5em 0;
+    width: 15%;
+    height: 15%;
 }
