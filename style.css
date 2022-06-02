@@ -25,7 +25,7 @@
     font-family: 'Baloo Bhai 2', cursive;
     font-size: 3em;
     letter-spacing: 0.1em;
-    color: black;
+    color: #0E1111;
     text-decoration: none;
     text-transform: lowercase;
     animation: brand 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -46,7 +46,7 @@
   .nav-item {
     font-family: 'Staatliches', cursive;
     text-transform: uppercase;
-    background-image: linear-gradient(transparent 0%, transparent 90%, black 90%, black 100%);
+    background-image: linear-gradient(transparent 0%, transparent 90%, #0E1111 90%, #0E1111 100%);
     background-repeat: no-repeat;
     background-size: 0% 100%;
     background-position-x: right;
@@ -86,7 +86,7 @@
   .see-more-button {
     width: 20%;
     height: 15%;
-    color: black;
+    color: #0E1111;
     font-family: 'Staatliches', cursive;
     font-size: 1em;
     text-decoration: none;
@@ -104,7 +104,7 @@
   /* Productos destacados. Título. */
   .featured-title {
     font-family: 'Staatliches', cursive;
-    color: black;
+    color: #0E1111;
     text-transform: uppercase;
   }
   
@@ -135,9 +135,8 @@
     box-shadow: #1D3557 0 0 0;
   }
   
-  /* Fondo de footer */
+  /* Letras de footer */
   .footer-color {
-    background-color: #0E1111;
     color: white;
   }
   
