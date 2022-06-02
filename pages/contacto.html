@@ -57,27 +57,34 @@
             </div>
         </section>
 
+        <div class="d-flex text-center">
+            <h2 class="contact-us d-flex text-center mt-4 fw-bold mx-auto fs-3">¡Comunicate con nosotros!</h2>
+        </div>
+
         <!-- Formulario -->
-        <section class="form-container">
-            <div class="form-content">
-                <h2 class="contact-us d-flex text-center my-4 fw-bold mx-auto fs-3">¡Comunicate con nosotros!</h2>
-                <div class="name-box">
-                    <p>Nombre</p>
-                </div>
-                <div class="email-box">
-                    <p>Correo electrónico</p>
-                </div>
-                <div class="subject-box">
-                    <p>Asunto</p>
-                </div>
-                <div class="message-box">
-                    <p>Mensaje</p>
-                </div>
-                <div class="m-auto d-flex justify-content-center align-middle btn send-button-container">
-                    <a class="send-button" href="#">Enviar</a>
-                </div>
+        <form class="mx-auto my-5 col-4">
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input class="form-control">
             </div>
-        </section>
+            <div class="mb-3">
+                <label class="form-label">Correo electrónico</label>
+                <input class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Asunto</label>
+                <input class="form-control">
+            </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+            </div>
+            </div>
+            <button type="submit"
+                class="m-auto d-flex justify-content-center align-middle btn send-button-container send-button">Enviar</button>
+        </form>
+
     </main>
     <!-- Fin de main -->
 
