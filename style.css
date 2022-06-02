@@ -146,39 +146,12 @@
     color: white;
   }
 
-/* Barra de los html */
-.us-background,
-.products-background,
-.faq-background,
-.location-background,
-.contact-background {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    width: 100%;
-    height: 5em;
-    background-color: #0E1111;
-}
-
-.us-background div,
-.products-background div,
-.faq-background div,
-.location-background div,
-.contact-background div {
-    display: flex;
-    vertical-align: middle;
-    width: 100%;
-    padding: 0 2em;
-}
-
 /* Formato del texto en la barra */
 .us-text,
 .products-text,
 .faq-text,
 .location-text,
 .contact-text {
-    margin: auto;
     font-family: 'Staatliches', cursive;
     text-transform: uppercase;
     letter-spacing: 0.125em;
