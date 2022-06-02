@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <!-- Vínculo a CSS -->
     <link rel="stylesheet" href="../style.css">
 
@@ -23,17 +27,21 @@
 <body>
 
     <!-- Comienzo de header -->
-    <header class="nav-container">
-        <nav class="nav-content">
-            <div><a class="brand" href="../index.html">kindly</a></div>
-            <div>
-                <ul class="nav-item-container">
-                    <li><a class="nav-item" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="nav-item" href="productos.html">Productos</a></li>
-                    <li><a class="nav-item" href="preguntas-frecuentes.html">Preguntas Frequentes</a></li>
-                    <li><a class="nav-item" href="ubicacion.html">Ubicación</a></li>
-                    <li><a class="nav-item" href="contacto.html">Contacto</a></li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-background">
+            <div class="container-fluid">
+                <a class="navbar-brand brand ms-3" href="../index.html">kindly</a>
+                <div class="collapse navbar-collapse d-flex flex-row justify-content-end justify-content-sm-start justify-content-lg-end"
+                    id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex justify-content-evenly">
+                        <a class="nav-link nav-item fs-5 text-dark" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link nav-item fs-5 text-dark" href="productos.html">Productos</a>
+                        <a class="nav-link nav-item fs-5 text-dark" href="preguntas-frecuentes.html">Preguntas
+                            Frecuentes</a>
+                        <a class="nav-link nav-item fs-5 text-dark" href="ubicacion.html">Ubicación</a>
+                        <a class="nav-link nav-item fs-5 text-dark" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -54,18 +62,20 @@
             <div class="stores-container">
                 <!-- Primer local -->
                 <div class="store-container">
-                    <div class="map-container"><iframe class="responsive-iframe" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.4101716666804!2d-58.45605617077762!3d-34.56265189437102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3c0ad370f%3A0x3913f075bf7874eb!2sEcheverr%C3%ADa%202379%2C%20C1428%20DRO%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652307100297!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="map-container"><iframe class="responsive-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.4101716666804!2d-58.45605617077762!3d-34.56265189437102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3c0ad370f%3A0x3913f075bf7874eb!2sEcheverr%C3%ADa%202379%2C%20C1428%20DRO%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652307100297!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                     <p class="store-location">Echeverría 2379, Belgrano, Ciudad Autónoma de Buenos Aires</p>
                 </div>
 
                 <!-- Segundo local -->
                 <div class="store-container">
                     <div class="map-container">
-                        <iframe class="responsive-iframe" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.4160569457244!2d-58.42364329764608!3d-34.590576628218976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca78b73a3681%3A0x8ec383cf62354442!2sCosta%20Rica%204348%2C%20C1414BSD%20CABA!5e0!3m2!1ses-419!2sar!4v1652306890598!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="responsive-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335.4160569457244!2d-58.42364329764608!3d-34.590576628218976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca78b73a3681%3A0x8ec383cf62354442!2sCosta%20Rica%204348%2C%20C1414BSD%20CABA!5e0!3m2!1ses-419!2sar!4v1652306890598!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <p class="store-location">Costa Rica 4348, Palermo, Ciudad Autónoma de Buenos Aires</p>
                 </div>
@@ -73,23 +83,43 @@
     <!-- Fin de main -->
 
     <!-- Comienzo de footer -->
-    <footer class="footer-container">
+    <footer class="footer-color">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center m-auto">
 
-        <!-- Contenedor de texto de copyright -->
-        <p class="footer-text">Copyright © 2022 | Todos los derechos reservados.</p>
+                    <!-- Contenedor de texto de copyright -->
+                    <p class="footer-text d-flex my-auto text-center">Copyright © 2022 | Todos los derechos reservados.
+                    </p>
+                </div>
 
-        <!-- Sección de redes sociales -->
-        <div class="follow-us-container">
-            <h2 class="follow-us-text">Seguinos en</h2>
-            <div class="follow-us-icon-container"><a class="follow-us-icon" href="https://www.facebook.com/"><img
-                        src="../resources/icono-facebook.png" alt="Ícono de Facebook" width="32" height="32"></a>
-                <a class="follow-us-icon" href="https://www.instagram.com/"><img src="../resources/icono-instagram.png"
-                        alt="Ícono de Instagram" width="32" height="32"></a>
-                <a class="follow-us-icon" href="https://www.tumblr.com/"><img src="../resources/icono-tumblr.png"
-                        alt="Ícono de Twitter" width="32" height="32"></a></div>
+
+                <div class="col-4">
+                    <!-- Sección de redes sociales -->
+                    <div class="container-fluid my-4 d-flex flex-column justify-content-end align-middle">
+                        <h3 class="follow-us-text d-flex m-auto flex-nowrap align-middle fs-5">Seguinos en</h3>
+                        <div class="container-fluid d-flex flex-row justify-content-center">
+                            <a class="mx-1" href="https://www.facebook.com/"><img src="../resources/icono-facebook.png"
+                                    alt="Ícono de Facebook" width="32" height="32"></a>
+                            <a class="mx-1" href="https://www.instagram.com/"><img
+                                    src="../resources/icono-instagram.png" alt="Ícono de Instagram" width="32"
+                                    height="32"></a>
+                            <a class="mx-1" href="https://www.tumblr.com/"><img src="../resources/icono-tumblr.png"
+                                    alt="Ícono de Twitter" width="32" height="32"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </footer>
     <!-- Fin de footer -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 
 </body>
 
