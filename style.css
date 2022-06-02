@@ -4,20 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Contenedor del navbar */
-  .navbar-container {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    left: 0;
   }
   
   /* Formato del nombre de la marca */
@@ -147,32 +133,6 @@
     color: white;
   }
 
-/* Barra de los html */
-.us-background,
-.products-background,
-.faq-background,
-.location-background,
-.contact-background {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    width: 100%;
-    height: 5em;
-    background-color: #0E1111;
-}
-
-.us-background div,
-.products-background div,
-.faq-background div,
-.location-background div,
-.contact-background div {
-    display: flex;
-    vertical-align: middle;
-    width: 100%;
-    padding: 0 2em;
-}
-
 /* Formato del texto en la barra */
 .us-text,
 .products-text,
@@ -300,33 +260,9 @@
     text-align: justify;
 }
 
-/* Contenedor de preguntas frecuentes */
-.faq-container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-
 /* Formato de las preguntas */
 .faq-question {
     font-family: 'Staatliches', cursive;
-}
-
-/* Formato de las respuestas */
-.faq-answer {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    padding: 0.5em 0;
-    font-family: 'Nunito', cursive;
-}
-
-/* Separación entre la última pregunta y footer */
-.faq-answer-padding-bottom {
-    padding-bottom: 2em;
 }
 
 /* Contenedor de los locales */
