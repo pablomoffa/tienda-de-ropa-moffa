@@ -104,10 +104,12 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: auto;
-    width: 35%;
-    height: 30%;
+    width: 33.125rem;
+    height: 13.125rem;
     background-color: #457B9D;
     color: #1D3557;
+    box-shadow: -0.125rem 0.125rem 0.125rem rgba(0,0,0,0.2);
+    border-radius: 1rem;
     text-align: center;
     overflow: hidden;
     padding: 0.6rem 0;
@@ -117,29 +119,32 @@ h1 {
     font-family: 'Candara';
     font-size: xx-large;
     margin: auto 20%;
+    text-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Botón <ver más> */
 .see-more-button {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 20%;
-    height: 15%;
-    color: black;
-    font-family: 'Staatliches', cursive;
-    font-size: 1rem;
-    text-decoration: none;
+    border: none;
+    outline: 0;
+    padding: 0.75rem;
+    color: #0E1111;
     background-color: white;
-    box-shadow: #1D3557 0.25rem 0.25rem 0;
-    border-radius: 0.5em;
-    transition: transform 200ms, box-shadow 200ms;
+    text-align: center;
+    cursor: pointer;
+    width: 6.25rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+    border-radius: 1rem;
+    margin: auto;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .see-more-button:hover {
-    transform: translateY(0.25rem) translateX(0.25rem);
-    box-shadow: #1D3557 0 0 0;
+    opacity: 0.7;
 }
 
 /* Productos destacados */
@@ -176,8 +181,9 @@ h1 {
 }
 
 /* Título de Card */
-.card h3 {
+.card h2, .card h3 {
     margin: 1rem;
+    font-size: large;
 }
 
 /* Precio */
