@@ -109,7 +109,6 @@ main {
     background-color: #457B9D;
     color: #1D3557;
     box-shadow: -0.125rem 0.125rem 0.125rem rgba(0,0,0,0.2);
-    border-radius: 1rem;
     text-align: center;
     overflow: hidden;
     padding: 0.6rem 0;
@@ -141,10 +140,11 @@ h1 {
     border-radius: 1rem;
     margin: auto;
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    transition: transform 200ms, box-shadow 200ms;
 }
 
 .see-more-button:hover {
-    opacity: 0.7;
+transform: translateY(0.25rem) translateX(0.25rem);
 }
 
 /* Productos destacados */
@@ -177,13 +177,13 @@ h1 {
     max-width: 18.75rem;
     margin: auto;
     text-align: center;
-    font-family: arial;
 }
 
 /* Título de Card */
 .card h2, .card h3 {
     margin: 1rem;
     font-size: large;
+    font-family: 'Nunito', cursive;
 }
 
 /* Precio */
@@ -417,6 +417,67 @@ h1 {
     text-align: justify;
 }
 
+/* Acordeón hecho con CSS */
+#accordion {
+    margin: 6.25rem auto;
+    width: 37.5rem auto;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    background: white;
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+#accordion li label {
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#accordion li label h2 {
+    justify-content: center;
+    font-size: larger;
+    font-family: 'Staatliches', cursive;
+}
+
+.content {
+    text-align: justify;
+    padding: 0.5em 0;
+    font-family: 'Nunito', cursive;
+}
+
+#accordion li label span {
+    transform: rotate(90deg);
+    font-size: 1.375rem;
+    color: #0E1111;
+    font-weight: 900;
+}
+
+#accordion label + input[type="radio"]{
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 0.625rem;
+    line-height: 1.625rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 25rem;
+}
+
 /* Contenedor de preguntas frecuentes */
 .faq-container {
     margin: auto;
@@ -426,39 +487,14 @@ h1 {
     width: 50%;
 }
 
-/* Formato de las preguntas */
-.faq-question {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    padding: 2em 0 1.25em 0;
-    font-family: 'Staatliches', cursive;
-}
-
-/* Formato de las respuestas */
-.faq-answer {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    padding: 0.5em 0;
-    font-family: 'Nunito', cursive;
-}
-
-/* Separación entre la última pregunta y footer */
-.faq-answer-padding-bottom {
-    padding-bottom: 2em;
-}
-
 /* Contenedor de los locales */
 .stores-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(37.5em, 1fr));
-    grid-column-gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     justify-items: center;
     align-items: center;
-    padding: 4em 6em;
+    margin: 4rem 6rem;
 }
 
 /* Contenedor del local indvidual */
@@ -468,12 +504,13 @@ h1 {
     grid-template-rows: 3fr 1fr;
     justify-items: center;
     align-items: center;
-    width: 37.5em;
-    height: 34em;
-    border-style: dashed;
-    border-width: 0.063em;
+    width: 37.5rem;
+    height: 34rem;
     overflow: hidden;
     margin: 1.5em 0;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
 }
 
 /* Contenedor del mapa */
