@@ -548,46 +548,63 @@ h1 {
     justify-content: flex-start;
 }
 
+/* Formulario de contacto */
+.contact-form-container form {
+    width: 28.125rem;
+    margin: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.contact-form-container form input,
+.contact-form-container form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .4375rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #CCC;
+    border-bottom-width: 0.125rem;
+}
+
+.contact-form-container form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 18.75rem;
+    min-height: 12.5rem;
+    height: 18.75rem;
+}
+
+.contact-form-container form span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.3125rem;
+    font-family: 'Nunito', cursive;
+}
+
+.send-button {
+    /* max-width: 100%;
+    max-height: 20rem; */
+    outline: none;
+    color: white;
+    background-color: #0E1111;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: 'Staatliches', cursive;
+    border-radius: 0.3125rem;
+    padding: 0 1rem;
+}
+
+.send-button:hover {
+    opacity: 0.7;
+}
+
 /* Formulario */
 .form-container {
     margin: 1.25em 0;
-}
-
-/* Ubicación del formulario */
-.form-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: 70%;
-}
-
-/* Título del formulario */
-.form-content h2 {
-    text-align: center;
-    font-family: 'Nunito', cursive;
-    padding-bottom: 1.25em;
-}
-
-/* Cajas del formulario */
-.name-box,
-.email-box,
-.subject-box {
-    display: flex;
-    padding: 0.5em;
-    margin: 0.5em auto;
-    max-width: 23em;
-    min-width: 31em;
-    border-style: solid;
-    border-width: 0.063em;
-    color: #6F6F6F;
-}
-
-/* Botón para enviar */
-.send-button-container {
-    display: flex;
-    justify-content: center;
-    padding: 1.5em 0;
 }
 
 /* Formulario de registro */
@@ -877,6 +894,12 @@ form .register-button input:hover {
     }
 
     .article-image-container img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form-container form {
         max-width: 100%;
     }
 }
