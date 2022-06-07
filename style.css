@@ -13,6 +13,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 /* Barra de navegación */
@@ -125,19 +126,20 @@ h1 {
 .see-more-button {
     display: flex;
     justify-content: center;
-    border: none;
-    outline: 0;
-    padding: 0.75rem;
-    color: #0E1111;
-    background-color: white;
-    text-align: center;
-    cursor: pointer;
+    align-items: center;
     width: 6.25rem;
     height: 2.5rem;
+    color: #0E1111;
+    background-color: white;
     font-size: 1.125rem;
+    font-weight: 500;
     font-family: 'Staatliches', cursive;
+    border-radius: 0.3125rem;
+    outline: 0;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 1rem;
     margin: auto;
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
     transition: transform 200ms, box-shadow 200ms;
@@ -215,26 +217,6 @@ h1 {
     opacity: 0.7;
 }
 
-/* Botón <Enviar> */
-.send-button {
-    color: white;
-    font-family: 'Staatliches', cursive;
-    font-size: 1em;
-    text-decoration: none;
-    text-align: center;
-    background-color: #457B9D;
-    padding: 0.3em 0.6em;
-    border-radius: 0.6em;
-    box-shadow: #1D3557 0.25em 0.25em 0;
-    border-radius: 0.5em;
-    transition: transform 200ms, box-shadow 200ms;
-}
-
-.send-button:hover {
-    transform: translateY(0.25em) translateX(0.25em);
-    box-shadow: #1D3557 0 0 0;
-}
-
 /* Formato de footer */
 .footer-container {
     display: grid;
@@ -268,7 +250,7 @@ h1 {
     font-size: large;
     font-family: 'Candara';
     color: white;
-    padding-right: 2em;
+    padding-right: 2rem;
 }
 
 /* Contenedor de íconos de redes sociales */
@@ -277,14 +259,14 @@ h1 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding-right: 2em;
+    padding-right: 2rem;
 }
 
 /* Íconos de redes sociales */
 .follow-us-icon {
     max-width: 100%;
     height: auto;
-    padding: 0.125em;
+    padding: 0.125rem;
 }
 
 /* Barra de los html */
@@ -292,7 +274,8 @@ h1 {
 .products-background,
 .faq-background,
 .location-background,
-.contact-background {
+.contact-background,
+.register-background {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -306,7 +289,8 @@ h1 {
 .products-background div,
 .faq-background div,
 .location-background div,
-.contact-background div {
+.contact-background div,
+.register-background div {
     display: flex;
     vertical-align: middle;
     width: 100%;
@@ -318,7 +302,8 @@ h1 {
 .products-text,
 .faq-text,
 .location-text,
-.contact-text {
+.contact-text,
+.register-text {
     margin: auto;
     font-family: 'Staatliches', cursive;
     text-transform: uppercase;
@@ -339,8 +324,8 @@ h1 {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-    margin: 2em;
+    gap: 2rem;
+    margin: 2rem;
 }
 
 /* Formato del texto del artículo */
@@ -489,7 +474,8 @@ h1 {
 }
 
 /* Visitanos // Comunicate */
-.visit-us, .contact-us {
+.visit-us,
+.contact-us {
     display: flex;
     justify-content: center;
     margin: 3rem auto;
@@ -516,7 +502,7 @@ h1 {
     justify-items: center;
     align-items: center;
     width: 37.5rem;
-    height: 34rem;
+    height: 37.5rem;
     overflow: hidden;
     margin: 1.5em 0;
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
@@ -530,7 +516,6 @@ h1 {
     overflow: hidden;
     width: 100%;
     padding-top: 75%;
-    z-index: 0;
 }
 
 /* Responsive iframe */
@@ -548,7 +533,7 @@ h1 {
 .store-information {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     font-family: 'Nunito', cursive;
     align-items: center;
     margin: 0.5rem;
@@ -600,22 +585,412 @@ h1 {
     color: #6F6F6F;
 }
 
-/* Caja de mensaje */
-.message-box {
-    display: flex;
-    padding: 0.5em;
-    margin: 0.5em auto;
-    max-width: 23em;
-    min-width: 31em;
-    height: 19em;
-    border-style: solid;
-    border-width: 0.063em;
-    color: #6F6F6F;
-}
-
 /* Botón para enviar */
 .send-button-container {
     display: flex;
     justify-content: center;
     padding: 1.5em 0;
+}
+
+/* Formulario de registro */
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 43.75rem;
+    width: 100%;
+    padding: 1.5625rem 1.875rem;
+    border-radius: 0.3125rem;
+    font-family: 'Nunito', cursive;
+}
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 43.75rem;
+    width: 100%;
+    padding: 1.5625rem 1.875rem;
+    border-radius: 0.3125rem;
+    font-family: 'Nunito', cursive;
+}
+
+/* Título del formulario */
+.form-container .form-title {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.form-container .form-title::before {
+    content: '';
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 1.875rem;
+    height: 0.1875rem;
+    background: #0E1111;
+}
+
+.form-container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-form-container form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-container form {
+    display: flex;
+    justify-content: center;
+}
+
+form .user-details .input-box,
+form .contact-user-details .input-box {
+    margin-bottom: 0.9375rem;
+    width: calc(100% / 2 - 1.25rem);
+}
+
+.user-details .input-box .details,
+.contact-user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.3125rem;
+}
+
+.user-details .input-box input,
+.user-details .input-box input {
+    height: 2.8125rem;
+    width: 100%;
+    outline: none;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #CCC;
+    font-size: 1rem;
+    border-bottom-width: 0.125rem;
+    text-indent: 0.5rem;
+}
+
+.contact-user-details .input-box .contact-input-size {
+    height: 2.8125rem;
+    width: 25rem;
+    outline: none;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #CCC;
+    font-size: 1rem;
+    border-bottom-width: 0.125rem;
+    text-indent: 0.5rem;
+}
+
+.contact-user-details .input-box .message-box {
+    height: 12.5rem;
+    width: 25rem;
+    outline: none;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #CCC;
+    font-size: 1rem;
+    border-bottom-width: 0.125rem;
+    text-indent: 0.5rem;
+}
+
+form .register-button,
+form .send-button {
+    height: 2.8125rem;
+    margin: 2.8125rem 0;
+}
+
+form .register-button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    background-color: #0E1111;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: 'Staatliches', cursive;
+    border-radius: 0.3125rem;
+    padding: 0 1rem;
+}
+
+form .send-button input {
+    height: 40px;
+    width: 6.25rem;
+    outline: none;
+    color: white;
+    background-color: #0E1111;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: 'Staatliches', cursive;
+    border-radius: 0.3125rem;
+    padding: 0 1rem;
+}
+
+form .register-button input:hover,
+form .send-button input:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1450px) {
+    .article-container {
+        margin: 5rem;
+    }
+}
+
+@media screen and (max-width: 1411px) {
+    .nav-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-container {
+        justify-content: center;
+    }
+
+    .stores-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .brand {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+        margin: 3rem 15rem;
+    }
+
+    .article-container {
+        margin: auto 3rem;
+    }
+
+    .article-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .article-container {
+        height: 50rem;
+        margin: auto 9rem;
+    }
+
+    .motives-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .brand {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav-item-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+
+    .nav-item {
+        margin: 1rem;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        margin: 3rem;
+    }
+
+    .motives-container {
+        grid-template-columns: 1fr;
+        column-gap: 2rem;
+        row-gap: 4rem;
+    }
+
+    .article-container {
+        height: 55rem;
+        margin: auto;
+    }
+
+    .motives-container {
+        gap: auto;
+        justify-items: center;
+        margin: 2rem auto;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footer-text {
+        grid-area: 1/1/2/2;
+    }
+
+    .follow-us-container {
+        grid-area: 2/1/3/2;
+        justify-items: center;
+        margin: auto;
+    }
+
+    .follow-us-text,
+    .follow-us-icon-container {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-container {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .nav-item-container {
+        display: flex;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 0.9375rem;
+        width: 100%;
+    }
+
+    .form-container form .user-details {
+        max-height: 18.75rem;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .ad-container {
+        width: 20rem;
+        height: 10rem;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    .see-more-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 1.5rem;
+        padding: 0;
+        margin: auto;
+        font-size: small;
+    }
+
+    .article-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .article-image-container img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+
+    .us-text,
+    .products-text,
+    .faq-text,
+    .location-text,
+    .contact-text,
+    .register-text {
+        margin: auto;
+        font-size: 1.7rem;
+    }
+
+    .choosing-us-container {
+        max-width: 100%;
+        margin: 3rem auto;
+        padding: 3rem auto;
+    }
+
+    .motives-container {
+        max-width: 100%;
+        gap: auto;
+        margin: 2rem auto;
+        padding: 2rem auto;
+    }
+
+    .visit-us {
+        display: flex;
+        justify-content: center;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .article-container {
+        height: 60rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .article-container {
+        height: 65rem;
+    }
 }
