@@ -494,20 +494,12 @@ h1 {
     margin: 4rem 6rem;
 }
 
-/* Contenedor del local indvidual */
+/* Contenedor del local */
 .store-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
-    justify-items: center;
-    align-items: center;
-    width: 37.5rem;
-    height: 37.5rem;
-    overflow: hidden;
-    margin: 1.5em 0;
     box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
-    margin: auto;
-    text-align: center;
 }
 
 /* Contenedor del mapa */
@@ -515,10 +507,10 @@ h1 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 75%;
+    padding-top: 100%;
 }
 
-/* Responsive iframe */
+/* Responsive Iframe */
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -527,6 +519,12 @@ h1 {
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Contenedor de la información de los locales */
+.store-information-container {
+    display: grid;
+    align-items: center;
 }
 
 /* Información de los locales */
@@ -609,25 +607,6 @@ h1 {
     font-family: 'Nunito', cursive;
 }
 
-.contact-form-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.625rem;
-}
-
-.contact-form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    max-width: 43.75rem;
-    width: 100%;
-    padding: 1.5625rem 1.875rem;
-    border-radius: 0.3125rem;
-    font-family: 'Nunito', cursive;
-}
-
 /* Título del formulario */
 .form-container .form-title {
     font-size: 1.5625rem;
@@ -651,24 +630,12 @@ h1 {
     justify-content: space-between;
 }
 
-.contact-form-container form {
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form-container form {
-    display: flex;
-    justify-content: center;
-}
-
-form .user-details .input-box,
-form .contact-user-details .input-box {
+form .user-details .input-box {
     margin-bottom: 0.9375rem;
     width: calc(100% / 2 - 1.25rem);
 }
 
-.user-details .input-box .details,
-.contact-user-details .input-box .details {
+.user-details .input-box .details {
     display: block;
     font-weight: 500;
     margin-bottom: 0.3125rem;
@@ -686,30 +653,7 @@ form .contact-user-details .input-box {
     text-indent: 0.5rem;
 }
 
-.contact-user-details .input-box .contact-input-size {
-    height: 2.8125rem;
-    width: 25rem;
-    outline: none;
-    border-radius: 0.3125rem;
-    border: 0.0625rem solid #CCC;
-    font-size: 1rem;
-    border-bottom-width: 0.125rem;
-    text-indent: 0.5rem;
-}
-
-.contact-user-details .input-box .message-box {
-    height: 12.5rem;
-    width: 25rem;
-    outline: none;
-    border-radius: 0.3125rem;
-    border: 0.0625rem solid #CCC;
-    font-size: 1rem;
-    border-bottom-width: 0.125rem;
-    text-indent: 0.5rem;
-}
-
-form .register-button,
-form .send-button {
+form .register-button {
     height: 2.8125rem;
     margin: 2.8125rem 0;
 }
@@ -728,22 +672,7 @@ form .register-button input {
     padding: 0 1rem;
 }
 
-form .send-button input {
-    height: 40px;
-    width: 6.25rem;
-    outline: none;
-    color: white;
-    background-color: #0E1111;
-    border: none;
-    font-size: 1.125rem;
-    font-weight: 500;
-    font-family: 'Staatliches', cursive;
-    border-radius: 0.3125rem;
-    padding: 0 1rem;
-}
-
-form .register-button input:hover,
-form .send-button input:hover {
+form .register-button input:hover {
     opacity: 0.7;
 }
 
@@ -864,7 +793,7 @@ form .send-button input:hover {
 }
 
 @media screen and (max-width: 648px) {
-    
+
     .footer-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -902,6 +831,7 @@ form .send-button input:hover {
 }
 
 @media screen and (max-width: 576px) {
+
     .form-container {
         display: flex;
         flex-direction: column;
@@ -976,7 +906,8 @@ form .send-button input:hover {
         padding: 2rem auto;
     }
 
-    .visit-us {
+    .visit-us,
+    .contact-us {
         display: flex;
         justify-content: center;
         font-size: small;
