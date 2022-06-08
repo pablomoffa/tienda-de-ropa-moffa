@@ -1,3 +1,240 @@
 // Variables
 
 $main-color: #0E1111;
+$secondary-color: white;
+$ad-container-color: #457B9D;
+$ad-text-color: #1D3557;
+$price-color: gray;
+$box-shadow: -0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
+$card-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+$text-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+$main-font: 'Staatliches', cursive;
+$secondary-font: 'Nunito', cursive;
+$footer-font: 'Candara';
+$brand-font: 'Baloo Bhai 2', cursive;
+
+// Nesting
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.nav-container {
+    background-color: $secondary-color;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .nav-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+
+        .brand {
+            display: grid;
+            grid-area: 1/1/2/2;
+            align-items: center;
+            font-family: $brand-font;
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+            color: $main-color;
+            text-decoration: none;
+            text-transform: lowercase;
+            margin: 1rem;
+        }
+
+        .nav-item-container {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            text-decoration: none;
+            list-style: none;
+
+            .nav-item {
+                display: flex;
+                align-items: center;
+                margin: 3rem;
+                text-decoration: none;
+                color: $main-color;
+                font-size: 1.25rem;
+                font-family: $main-font;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+/* Fin de header */
+
+/* Main */
+main {
+    background-color: $secondary-color;
+
+    .background-container {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 43.75rem;
+        background-image: url('../resources/foto-portada.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .ad-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 33.125rem;
+            height: 13.125rem;
+            background-color: $ad-container-color;
+            color: $ad-text-color;
+            box-shadow: $box-shadow;
+            text-align: center;
+            overflow: hidden;
+            padding: 0.6rem 0;
+
+            .ad-text {
+                font-family: $footer-font;
+                font-size: xx-large;
+                margin: auto 20%;
+                text-shadow: $text-shadow;
+            }
+
+            .see-more-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 6.25rem;
+                height: 2.5rem;
+                color: $main-color;
+                background-color: $secondary-color;
+                font-size: 1.125rem;
+                font-weight: 500;
+                font-family: $main-font;
+                border-radius: 0.3125rem;
+                outline: 0;
+                padding: 0.75rem;
+                text-align: center;
+                cursor: pointer;
+                text-decoration: none;
+                margin: auto;
+                box-shadow: $box-shadow;
+            }
+        }
+    }
+
+    .featured-container {
+        background-color: $secondary-color;
+
+        .featured-title {
+            margin-top: 3rem;
+            font-family: $main-font;
+            font-size: 1.8rem;
+            color: $main-color;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 3rem;
+            justify-items: center;
+            margin: 3rem 7rem;
+
+            .card {
+                box-shadow: $card-shadow;
+                max-width: 18.75rem;
+                margin: auto;
+                text-align: center;
+
+                h2,
+                h3 {
+                    margin: 1rem;
+                    font-size: large;
+                    font-family: $secondary-font;
+                }
+
+                .price {
+                    margin: 1rem;
+                    color: $price-color;
+                    text-align: center;
+                    font-family: $secondary-font;
+                    font-size: medium;
+                    font-weight: 500;
+                }
+
+                p {
+                    button {
+                        border: none;
+                        outline: 0;
+                        padding: 0.75rem;
+                        color: $secondary-color;
+                        background-color: $main-color;
+                        text-align: center;
+                        cursor: pointer;
+                        width: 100%;
+                        font-size: 1.125rem;
+                        font-family: $main-font;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Fin de main */
+
+/* Comienzo de footer */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    background-color: $main-color;
+
+    .footer-text {
+        grid-area: 1/2/2/3;
+        margin: auto;
+        font-family: $secondary-font;
+        color: $secondary-color;
+        text-align: center;
+    }
+
+    .follow-us-container {
+        display: grid;
+        grid-area: 1/3/2/4;
+        margin: 1.25rem 2rem;
+        justify-items: end;
+
+        .follow-us-text {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: large;
+            font-family: $footer-font;
+            color: $secondary-color;
+            padding-right: 2rem;
+        }
+
+        .follow-us-icon-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-right: 2rem;
+        }
+
+        .follow-us-icon {
+            max-width: 100%;
+            height: auto;
+            padding: 0.125rem;
+        }
+    }
+}
+/* Fin de footer */
