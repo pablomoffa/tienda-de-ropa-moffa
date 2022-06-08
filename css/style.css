@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* Header */
 .nav-container {
@@ -10,169 +11,211 @@
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1; }
-  .nav-container .nav-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr; }
-    .nav-container .nav-content .brand {
-      display: grid;
-      grid-area: 1/1/2/2;
-      align-items: center;
-      font-family: "Baloo Bhai 2", cursive;
-      font-size: 3rem;
-      letter-spacing: 0.1rem;
-      color: #0E1111;
-      text-decoration: none;
-      text-transform: lowercase;
-      margin: 1rem; }
-    .nav-container .nav-content .nav-item-container {
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      text-decoration: none;
-      list-style: none; }
-      .nav-container .nav-content .nav-item-container .nav-item {
-        display: flex;
-        align-items: center;
-        margin: 3rem;
-        text-decoration: none;
-        color: #0E1111;
-        font-size: 1.25rem;
-        font-family: "Staatliches", cursive;
-        text-transform: uppercase; }
+  z-index: 1;
+}
 
+.nav-container .nav-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.nav-container .nav-content .brand {
+  display: grid;
+  grid-area: 1/1/2/2;
+  align-items: center;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: #0E1111;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin: 1rem;
+}
+
+.nav-container .nav-content .nav-item-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-container .nav-content .nav-item-container .nav-item {
+  display: flex;
+  align-items: center;
+  margin: 3rem;
+  text-decoration: none;
+  color: #0E1111;
+  font-size: 1.25rem;
+  font-family: "Staatliches", cursive;
+  text-transform: uppercase;
+}
 /* Fin de header */
+
 /* Main */
 main {
-  background-color: white; }
-  main .background-container {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    width: 100%;
-    height: 43.75rem;
-    background-image: url("../resources/foto-portada.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
-    main .background-container .ad-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin: auto;
-      width: 33.125rem;
-      height: 13.125rem;
-      background-color: #457B9D;
-      color: #1D3557;
-      box-shadow: -0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
-      text-align: center;
-      overflow: hidden;
-      padding: 0.6rem 0; }
-      main .background-container .ad-container .ad-text {
-        font-family: "Candara";
-        font-size: xx-large;
-        margin: auto 20%;
-        text-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2); }
-      main .background-container .ad-container .see-more-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 6.25rem;
-        height: 2.5rem;
-        color: #0E1111;
-        background-color: white;
-        font-size: 1.125rem;
-        font-weight: 500;
-        font-family: "Staatliches", cursive;
-        border-radius: 0.3125rem;
-        outline: 0;
-        padding: 0.75rem;
-        text-align: center;
-        cursor: pointer;
-        text-decoration: none;
-        margin: auto;
-        box-shadow: -0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2); }
-  main .featured-container {
-    background-color: white; }
-    main .featured-container .featured-title {
-      margin-top: 3rem;
-      font-family: "Staatliches", cursive;
-      font-size: 1.8rem;
-      color: #0E1111;
-      text-transform: uppercase;
-      text-align: center; }
-    main .featured-container .cards-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 3rem;
-      justify-items: center;
-      margin: 3rem 7rem; }
-      main .featured-container .cards-container .card {
-        box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
-        max-width: 18.75rem;
-        margin: auto;
-        text-align: center; }
-        main .featured-container .cards-container .card h2,
-        main .featured-container .cards-container .card h3 {
-          margin: 1rem;
-          font-size: large;
-          font-family: "Nunito", cursive; }
-        main .featured-container .cards-container .card .price {
-          margin: 1rem;
-          color: gray;
-          text-align: center;
-          font-family: "Nunito", cursive;
-          font-size: medium;
-          font-weight: 500; }
-        main .featured-container .cards-container .card p button {
-          border: none;
-          outline: 0;
-          padding: 0.75rem;
-          color: white;
-          background-color: #0E1111;
-          text-align: center;
-          cursor: pointer;
-          width: 100%;
-          font-size: 1.125rem;
-          font-family: "Staatliches", cursive; }
+  background-color: white;
+}
 
+main .background-container {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 43.75rem;
+  background-image: url("../resources/foto-portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .background-container .ad-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 33.125rem;
+  height: 13.125rem;
+  background-color: #457B9D;
+  color: #1D3557;
+  box-shadow: -0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden;
+  padding: 0.6rem 0;
+}
+
+main .background-container .ad-container .ad-text {
+  font-family: "Candara";
+  font-size: xx-large;
+  margin: auto 20%;
+  text-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+main .background-container .ad-container .see-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.25rem;
+  height: 2.5rem;
+  color: #0E1111;
+  background-color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: "Staatliches", cursive;
+  border-radius: 0.3125rem;
+  outline: 0;
+  padding: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin: auto;
+  box-shadow: -0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+
+main .featured-container {
+  background-color: white;
+}
+
+main .featured-container .featured-title {
+  margin-top: 3rem;
+  font-family: "Staatliches", cursive;
+  font-size: 1.8rem;
+  color: #0E1111;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main .featured-container .cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3rem;
+  justify-items: center;
+  margin: 3rem 7rem;
+}
+
+main .featured-container .cards-container .card {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  max-width: 18.75rem;
+  margin: auto;
+  text-align: center;
+}
+
+main .featured-container .cards-container .card h2,
+main .featured-container .cards-container .card h3 {
+  margin: 1rem;
+  font-size: large;
+  font-family: "Nunito", cursive;
+}
+
+main .featured-container .cards-container .card .price {
+  margin: 1rem;
+  color: gray;
+  text-align: center;
+  font-family: "Nunito", cursive;
+  font-size: medium;
+  font-weight: 500;
+}
+
+main .featured-container .cards-container .card p button {
+  border: none;
+  outline: 0;
+  padding: 0.75rem;
+  color: white;
+  background-color: #0E1111;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.125rem;
+  font-family: "Staatliches", cursive;
+}
 /* Fin de main */
+
 /* Comienzo de footer */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 16px;
-  background-color: #0E1111; }
-  .footer-container .footer-text {
-    grid-area: 1/2/2/3;
-    margin: auto;
-    font-family: "Nunito", cursive;
-    color: white;
-    text-align: center; }
-  .footer-container .follow-us-container {
-    display: grid;
-    grid-area: 1/3/2/4;
-    margin: 1.25rem 2rem;
-    justify-items: end; }
-    .footer-container .follow-us-container .follow-us-text {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: large;
-      font-family: "Candara";
-      color: white;
-      padding-right: 2rem; }
-    .footer-container .follow-us-container .follow-us-icon-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding-right: 2rem; }
-    .footer-container .follow-us-container .follow-us-icon {
-      max-width: 100%;
-      height: auto;
-      padding: 0.125rem; }
+  background-color: #0E1111;
+}
 
+.footer-container .footer-text {
+  grid-area: 1/2/2/3;
+  margin: auto;
+  font-family: "Nunito", cursive;
+  color: white;
+  text-align: center;
+}
+
+.footer-container .follow-us-container {
+  display: grid;
+  grid-area: 1/3/2/4;
+  margin: 1.25rem 2rem;
+  justify-items: end;
+}
+
+.footer-container .follow-us-container .follow-us-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: large;
+  font-family: "Candara";
+  color: white;
+  padding-right: 2rem;
+}
+
+.footer-container .follow-us-container .follow-us-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right: 2rem;
+}
+
+.footer-container .follow-us-container .follow-us-icon {
+  max-width: 100%;
+  height: auto;
+  padding: 0.125rem;
+}
 /* Fin de footer */
