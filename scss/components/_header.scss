@@ -1,0 +1,48 @@
+/* Header */
+.nav-container {
+    background-color: $secondary-color;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .nav-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+
+        .brand {
+            display: grid;
+            grid-area: 1/1/2/2;
+            align-items: center;
+            font-family: $brand-font;
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+            color: $main-color;
+            text-decoration: none;
+            text-transform: lowercase;
+            margin: 1rem;
+        }
+
+        .nav-item-container {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            text-decoration: none;
+            list-style: none;
+
+            .nav-item {
+                display: flex;
+                align-items: center;
+                margin: 3rem;
+                text-decoration: none;
+                color: $main-color;
+                font-size: 1.25rem;
+                font-family: $main-font;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+/* Fin de header */

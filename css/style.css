@@ -172,7 +172,7 @@ main .featured-container .cards-container .card p button {
 }
 /* Fin de main */
 
-/* Comienzo de footer */
+/* Footer */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
