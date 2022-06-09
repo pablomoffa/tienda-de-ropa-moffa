@@ -1,6 +1,6 @@
 /* Header */
 .nav-container {
-    background-color: $secondary-color;
+    background-color: nth($colors, 2);
     width: 100%;
     position: sticky;
     top: 0;
@@ -19,7 +19,7 @@
             font-family: $brand-font;
             font-size: 3rem;
             letter-spacing: 0.1rem;
-            color: $main-color;
+            color: nth($colors, 1);
             text-decoration: none;
             text-transform: lowercase;
             margin: 1rem;
@@ -37,7 +37,7 @@
                 align-items: center;
                 margin: 3rem;
                 text-decoration: none;
-                color: $main-color;
+                color: nth($colors, 1);
                 font-size: 1.25rem;
                 font-family: $main-font;
                 text-transform: uppercase;

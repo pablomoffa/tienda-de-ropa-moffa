@@ -4,13 +4,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 16px;
-    background-color: $main-color;
+    background-color: nth($colors, 1);
 
     .footer-text {
         grid-area: 1/2/2/3;
         margin: auto;
         font-family: $secondary-font;
-        color: $secondary-color;
+        color: nth($colors, 2);
         text-align: center;
     }
 
@@ -25,7 +25,7 @@
             text-transform: uppercase;
             font-size: large;
             font-family: $footer-font;
-            color: $secondary-color;
+            color: nth($colors, 1);
             padding-right: 2rem;
         }
 
