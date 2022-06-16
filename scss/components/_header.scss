@@ -3,10 +3,13 @@
 .nav-container {
     background-color: nth($colors, 2);
     width: 100%;
-    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
+
+    @media screen and (min-width: 600px) {
+        position: sticky;
+    }
 
     .nav-content {
         display: grid;

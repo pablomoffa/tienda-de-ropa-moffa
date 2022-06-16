@@ -143,6 +143,27 @@ main .featured-container .cards-container,
   margin: 3rem 7rem;
 }
 
+@media screen and (max-width: 1200px) {
+
+  main .featured-container .cards-container,
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin: 3rem 15rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  main .featured-container .cards-container,
+  .cards-container {
+    grid-template-columns: 1fr;
+    column-gap: 3rem;
+    margin: 3rem;
+  }
+}
+
 main .featured-container .cards-container .card,
 .cards-container .card {
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
@@ -184,10 +205,15 @@ main .featured-container .cards-container .card .price,
 .nav-container {
   background-color: white;
   width: 100%;
-  position: sticky;
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-container {
+    position: sticky;
+  }
 }
 
 .nav-container .nav-content {
@@ -403,23 +429,6 @@ main .featured-container .featured-title {
   text-transform: uppercase;
   text-align: center;
 }
-
-@media screen and (max-width: 1200px) {
-  main .featured-container .cards-container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-    row-gap: 3rem;
-    margin: 3rem 15rem;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  main .featured-container .cards-container {
-    grid-template-columns: 1fr;
-    column-gap: 3rem;
-    margin: 3rem;
-  }
-}
 /* Fin de Index | Main*/
 
 /* Nosotros | Main*/
@@ -606,8 +615,8 @@ main .featured-container .featured-title {
   font-family: "Nunito", cursive;
   text-align: justify;
 }
-/* Fin de Nosotros | Main*/
 
+/* Fin de Nosotros | Main*/
 /* Preguntas Frecuentes | Main */
 .faq-container {
   margin: 3rem auto;
@@ -692,7 +701,7 @@ main .featured-container .featured-title {
 
 @media screen and (max-width: 600px) {
   .stores-container {
-    margin: 2rem 3rem;
+    margin: 2rem;
   }
 }
 
@@ -1011,3 +1020,7 @@ main .featured-container .featured-title {
   padding: 0.125rem;
 }
 /* Fin de Footer */
+
+.disclaimer {
+  display: none;
+}
