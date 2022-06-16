@@ -1,0 +1,122 @@
+/* Index | Main*/
+
+main {
+    background-color: nth($colors, 2);
+
+    .background-container {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 43.75rem;
+        background-image: url('../resources/foto-portada.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .ad-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 33.125rem;
+            height: 13.125rem;
+            background-color: nth($colors, 2);
+            color: nth($colors, 1);
+            text-shadow: $text-shadow;
+            box-shadow: $box-shadow;
+            text-align: center;
+            overflow: hidden;
+            padding: 0.6rem 0;
+
+            @media screen and (max-width: 530px) {
+                width: 20rem;
+                height: 10rem;
+            }
+
+            .ad-text {
+                font-family: $footer-font;
+                font-size: 1.7rem;
+                margin: auto 20%;
+                text-shadow: $text-shadow;
+
+                @media screen and (max-width: 530px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .see-more-button {
+                @extend %buttons;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: nth($colors, 2);
+                background-color: nth($colors, 1);
+                padding: 0.75rem;
+                margin: auto;
+
+                @media screen and (max-width: 530px) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 3rem;
+                        height: 1.5rem;
+                        padding: 0;
+                        margin: auto;
+                        font-size: small;
+                    }
+            }
+        }
+    }
+
+    .featured-container {
+        background-color: nth($colors, 2);
+
+        .featured-title {
+            margin-top: 3rem;
+            font-family: $main-font;
+            font-size: 1.8rem;
+            color: nth($colors, 1);
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .cards-container {
+            @extend %cards-container;
+
+            @media screen and (max-width: 1200px) {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 3rem;
+                row-gap: 3rem;
+                margin: 3rem 15rem;
+            }
+
+            @media screen and (max-width: 850px) {
+                grid-template-columns: 1fr;
+                column-gap: 3rem;
+                margin: 3rem;
+            }
+
+            .card {
+                @extend %card;
+
+                .card-title {
+                    @extend %card-title;
+                }
+
+                .price {
+                    @extend %price;
+                }
+
+                p {
+                    button {
+                        @extend %add-to-cart;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Fin de Index | Main*/

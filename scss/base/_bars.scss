@@ -1,0 +1,32 @@
+@import 'colors';
+
+%bar-background {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 5em;
+    background-color: nth($colors, 1);
+}
+
+%bar-div {
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0 2em;
+}
+
+%bar-text {
+    margin: auto;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    font-size: 2rem;
+    color: white;
+
+    @media screen and (max-width: 468px) {
+        margin: auto;
+        font-size: 1.7rem;
+    }
+}

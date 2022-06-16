@@ -1,0 +1,9 @@
+%textarea {
+    height: 2.8125rem;
+    width: 100%;
+    outline: none;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid nth($colors, 6);
+    font-size: 1rem;
+    border-bottom-width: 0.125rem;
+}

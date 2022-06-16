@@ -1,0 +1,86 @@
+/* Registro | Main */
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+
+    .form-container {
+        max-width: 43.75rem;
+        width: 100%;
+        padding: 1.5625rem 1.875rem;
+        border-radius: 0.3125rem;
+        font-family: $secondary-font;
+
+        @media screen and (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        .form-title {
+            font-size: 1.5625rem;
+            font-weight: 500;
+            margin: 1rem 0;
+
+            &::before {
+                content: '';
+                position: relative;
+                left: 0;
+                bottom: 0;
+                width: 1.875rem;
+                height: 0.1875rem;
+                background: nth($colors, 1);
+            }
+        }
+
+        form {
+            .user-details {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                @media screen and (max-width: 576px) {
+                    max-height: 18.75rem;
+                    overflow-y: scroll;
+                }
+
+                .input-box {
+                    margin-bottom: 0.9375rem;
+                    width: calc(100% / 2 - 1.25rem);
+
+                    @media screen and (max-width: 576px) {
+                        margin-bottom: 0.9375rem;
+                        width: 100%;
+                    }
+
+                    .details {
+                        display: block;
+                        font-weight: 500;
+                        margin-bottom: 0.3125rem;
+                    }
+
+                    input {
+                        @extend %textarea;
+                        text-indent: 0.5rem;
+                    }
+                }
+            }
+
+            .register-button {
+                height: 2.8125rem;
+                margin: 2.8125rem 0;
+
+                input {
+                    @extend %buttons;
+                    color: nth($colors, 2);
+                    background-color: nth($colors, 1);
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* Fin de Registro | Main */

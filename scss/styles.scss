@@ -4,130 +4,20 @@
     box-sizing: border-box;
 }
 
+@import 'base/animations';
+@import 'base/bars';
+@import 'base/buttons';
 @import 'base/colors';
 @import 'base/fonts';
+@import 'base/productcards';
 @import 'base/shadows';
+@import 'base/textarea';
 @import 'components/header';
-
-/* Main */
-main {
-    background-color: nth($colors, 2);
-
-    .background-container {
-        display: flex;
-        justify-content: center;
-        vertical-align: middle;
-        width: 100%;
-        height: 43.75rem;
-        background-image: url('../resources/foto-portada.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        .ad-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            margin: auto;
-            width: 33.125rem;
-            height: 13.125rem;
-            background-color: nth($colors, 3);
-            color: nth($colors, 4);
-            box-shadow: $box-shadow;
-            text-align: center;
-            overflow: hidden;
-            padding: 0.6rem 0;
-
-            .ad-text {
-                font-family: $footer-font;
-                font-size: xx-large;
-                margin: auto 20%;
-                text-shadow: $text-shadow;
-            }
-
-            .see-more-button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 6.25rem;
-                height: 2.5rem;
-                color: nth($colors, 1);
-                background-color: nth($colors, 2);
-                font-size: 1.125rem;
-                font-weight: 500;
-                font-family: $main-font;
-                border-radius: 0.3125rem;
-                outline: 0;
-                padding: 0.75rem;
-                text-align: center;
-                cursor: pointer;
-                text-decoration: none;
-                margin: auto;
-                box-shadow: $box-shadow;
-            }
-        }
-    }
-
-    .featured-container {
-        background-color: nth($colors, 2);
-
-        .featured-title {
-            margin-top: 3rem;
-            font-family: $main-font;
-            font-size: 1.8rem;
-            color: nth($colors, 1);
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            row-gap: 3rem;
-            justify-items: center;
-            margin: 3rem 7rem;
-
-            .card {
-                box-shadow: $card-shadow;
-                max-width: 18.75rem;
-                margin: auto;
-                text-align: center;
-
-                h2,
-                h3 {
-                    margin: 1rem;
-                    font-size: large;
-                    font-family: $secondary-font;
-                }
-
-                .price {
-                    margin: 1rem;
-                    color: nth($colors, 5);
-                    text-align: center;
-                    font-family: $secondary-font;
-                    font-size: medium;
-                    font-weight: 500;
-                }
-
-                p {
-                    button {
-                        border: none;
-                        outline: 0;
-                        padding: 0.75rem;
-                        color: nth($colors, 2);
-                        background-color: nth($colors, 1);
-                        text-align: center;
-                        cursor: pointer;
-                        width: 100%;
-                        font-size: 1.125rem;
-                        font-family: $main-font;
-                    }
-                }
-            }
-        }
-    }
-}
-/* Fin de main */
-
+@import 'components/indexmain';
+@import 'components/nosotrosmain';
+@import 'components/preguntasfrecuentesmain';
+@import 'components/productosmain';
+@import 'components/ubicacionmain';
+@import 'components/contactomain';
+@import 'components/registromain';
 @import 'components/footer';

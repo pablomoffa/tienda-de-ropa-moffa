@@ -1,0 +1,64 @@
+/* Preguntas Frecuentes | Main */
+
+.faq-container {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    .tab {
+        font-family: $main-font;
+        box-sizing: border-box;
+        max-width: 37.5rem;
+
+        input {
+            display: none;
+
+            &:checked~.content {
+                max-height: 100vh;
+            }
+
+            &checked~label::after {
+                transform: rotate(90deg);
+            }
+        }
+
+        label {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin-top: 0.625rem;
+            padding: 1.7rem;
+            font-size: larger;
+            font-weight: 500;
+            color: nth($colors, 1);
+            cursor: pointer;
+    
+            &::after {
+                display: block;
+                content: "\25b6";
+                position: absolute;
+                right: 0.625rem;
+                top: 0.625rem;
+                transition: all 0.4s;
+            }
+        }
+
+        .content {
+            overflow: hidden;
+            transition: max-height 0.3s;
+            max-height: 0;
+    
+            p {
+                font-family: $secondary-font;
+                font-size: medium;
+                padding: 0.625rem;
+            }
+        }
+    }
+}
+
+
+/* Fin de Preguntas Frecuentes | Main */

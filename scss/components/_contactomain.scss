@@ -1,0 +1,65 @@
+/* Contacto | Main */
+
+.contact-form-container {
+
+    @media screen and (max-width: 480px) {
+        max-width: 100%;
+    }
+
+    form {
+        width: 28.125rem;
+        margin: auto;
+        padding: 0 2rem 2rem 2rem;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 468px) {
+            max-width: 100%;
+            padding: auto;
+        }
+
+        input {
+            @extend %textarea;
+        }
+
+        input+textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.4375rem;
+            box-sizing: border-box;
+            font-size: 1rem;
+            outline: none;
+            border-radius: 0.3125rem;
+            border: 0.0625rem solid nth($colors, 6);
+            border-bottom-width: 0.125rem;
+        }
+
+        textarea {
+            max-width: 100%;
+            min-width: 100%;
+            max-height: 18.75rem;
+            min-height: 12.5rem;
+            height: 18.75rem;
+            @extend %textarea;
+        }
+
+        span {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.3125rem;
+            font-family: $secondary-font;
+        }
+
+        .details {
+            margin: 1rem auto 0.5rem auto;
+        }
+
+        .send-button {
+            @extend %buttons;
+            color: nth($colors, 2);
+            background-color: nth($colors, 1);
+            margin: 1rem auto;
+        }
+    }
+}
+
+/* Fin de Contacto | Main */
