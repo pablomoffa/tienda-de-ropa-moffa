@@ -486,9 +486,10 @@ main .featured-container .featured-title {
 
 @media screen and (max-width: 1200px) {
   .article-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
   }
 }
 
@@ -497,6 +498,15 @@ main .featured-container .featured-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .article-content .article-text-container {
+    display: flex;
+    width: 90%;
+    justify-content: center;
   }
 }
 
@@ -615,8 +625,8 @@ main .featured-container .featured-title {
   font-family: "Nunito", cursive;
   text-align: justify;
 }
-
 /* Fin de Nosotros | Main*/
+
 /* Preguntas Frecuentes | Main */
 .faq-container {
   margin: 3rem auto;

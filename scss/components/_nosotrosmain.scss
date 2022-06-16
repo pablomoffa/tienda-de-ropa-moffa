@@ -52,18 +52,27 @@
     margin: 2rem;
 
     @media screen and (max-width: 1200px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 1rem;
     }
 
     @media screen and (max-width: 530px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: auto;
     }
 
+
     .article-text-container {
+        @media screen and (max-width: 1200px) {
+            display: flex;
+            width: 90%;
+            justify-content: center;
+        }
+
         .article-text {
             font-family: $secondary-font;
             text-align: justify;
@@ -82,6 +91,7 @@
         }
     }
 }
+
 
 .choosing-us-container {
     margin: 3rem;
