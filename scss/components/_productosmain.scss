@@ -2,14 +2,18 @@
 
 .cards-container {
     @extend %cards-container;
+
     .card {
         @extend %card;
+
         .card-title {
             @extend %card-title;
         }
+
         .price {
             @extend %price;
         }
+
         p {
             button {
                 @extend %add-to-cart;
