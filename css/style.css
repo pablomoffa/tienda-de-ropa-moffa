@@ -40,9 +40,6 @@
   letter-spacing: 0.125rem;
   font-size: 2rem;
   color: white; }
-  @media screen and (max-width: 320px) {
-    .bar-background div .bar-text {
-      text-align: center; } }
 
 .section-title {
   display: flex;
@@ -288,6 +285,8 @@ main {
         max-width: 64rem; } }
     .article-container .article-content .article-text-container {
       display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 1rem; }
       .article-container .article-content .article-text-container .article-text {
         font-family: "Nunito", cursive;
@@ -327,7 +326,7 @@ main {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 2rem;
-      margin: 2rem auto;
+      margin: 2rem 1rem;
       justify-content: center;
       align-items: start; } }
   .choosing-us-container .motives-container div {
@@ -472,7 +471,7 @@ main {
   margin: auto;
   padding: 0 2rem 2rem 2rem;
   box-sizing: border-box; }
-  @media screen and (max-width: 468px) {
+  @media screen and (max-width: 480px) {
     .contact-form-container form {
       max-width: 100%;
       padding: auto; } }
@@ -611,4 +610,4 @@ main {
 
 /* Fin de Footer */
 .disclaimer {
-  display: none; }
+  display: none !important; }

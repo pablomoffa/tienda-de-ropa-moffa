@@ -27,6 +27,8 @@
 
         .article-text-container {
             display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 1rem;
 
             .article-text {
@@ -83,7 +85,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             column-gap: 2rem;
-            margin: 2rem auto;
+            margin: 2rem 1rem;
             justify-content: center;
             align-items: start;
         }
