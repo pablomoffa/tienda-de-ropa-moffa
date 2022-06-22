@@ -1,11 +1,13 @@
 /* Contacto | Main */
 
+// Contenedor | Formulario de contacto
 .contact-form-container {
 
     @media screen and (max-width: 480px) {
         max-width: 100%;
     }
 
+    // Estilo | Formulario de contacto
     form {
         width: 28.125rem;
         margin: auto;
@@ -29,7 +31,7 @@
             font-size: 1rem;
             outline: none;
             border-radius: 0.3125rem;
-            border: 0.0625rem solid nth($colors, 6);
+            border: 0.0625rem solid nth($colors, 3);
             border-bottom-width: 0.125rem;
         }
 
@@ -53,6 +55,7 @@
             margin: 1rem auto 0.5rem auto;
         }
 
+        // Botón | Enviar
         .send-button {
             @extend %buttons;
             color: nth($colors, 2);

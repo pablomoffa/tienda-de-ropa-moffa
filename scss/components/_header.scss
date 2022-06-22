@@ -1,5 +1,6 @@
 /* Header */
 
+// Contenedor | Navbar
 .nav-container {
     background-color: nth($colors, 2);
     width: 100%;
@@ -11,6 +12,7 @@
         position: sticky;
     }
 
+    // Contenido | Navbar
     .nav-content {
         display: flex;
         flex-direction: column;
@@ -23,9 +25,10 @@
             align-items: center;
         }
 
+        // Estilo | Marca
         .brand {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             vertical-align: center;
             font-family: $brand-font;
             font-size: 3rem;
@@ -36,14 +39,20 @@
             margin: 1rem;
             @extend %brand;
             @include keyframes(brand);
+
+            @media screen and (min-width: 768px) {
+                justify-content: flex-start;
+            }
         }
 
         div {
 
+            // Contenedor | Enlaces de navegación
             .nav-item-container {
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
+                justify-content: center;
+                align-items: center;
                 text-decoration: none;
                 list-style: none;
 
@@ -52,6 +61,7 @@
                     justify-content: end;
                 }
 
+                // Separación | Enlaces de navegación
                 li {
                     margin: 0.5rem;
 
@@ -60,6 +70,7 @@
                     }
                 }
 
+                // Estilo | Enlaces de navegación
                 .nav-item {
                     text-decoration: none;
                     color: nth($colors, 1);
@@ -73,4 +84,4 @@
     }
 }
 
-/* Fin de Header */
+/* Fin | Header */

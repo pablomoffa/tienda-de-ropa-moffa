@@ -1,8 +1,10 @@
 /* Ubicación | Main*/
 
+// Título | Sección
 .section-title {
     @extend %section-title;
 }
+
 
 .location {
 
@@ -11,6 +13,8 @@
         justify-content: center;
         align-content: center;
     }
+
+    // Contenedor | Tiendas
     .stores-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -19,30 +23,33 @@
         margin: 1rem;
         justify-items: center;
         align-items: center;
-    
+
         @media screen and (min-width: 1200px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 5rem;
         }
-    
+
+        // Contenedor | Tienda
         .store-container {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 3fr 1fr;
             box-shadow: $box-shadow;
-    
+
             @media screen and (min-width: 480px) {
                 width: 28rem;
             }
-    
+
+            // Contenedor | Mapa
             .map-container {
                 position: relative;
                 overflow: hidden;
                 width: 100%;
                 padding-top: 100%;
-    
+
+                // Mapa | Responsive
                 .responsive-iframe {
                     position: absolute;
                     top: 0;
@@ -53,11 +60,13 @@
                     height: 100%;
                 }
             }
-    
+
+            // Contenedor | Información de la Tienda
             .store-information-container {
                 display: grid;
                 align-items: center;
-    
+
+                // Información | Tienda
                 .store-information {
                     display: grid;
                     grid-template-columns: 1fr 8fr;
@@ -65,18 +74,20 @@
                     font-family: $secondary-font;
                     align-items: center;
                     margin: 0.5rem;
-    
+
+                    // Íconos | Información de la Tienda
                     img {
                         display: grid;
                         align-self: end;
                         margin: 0.5rem;
                     }
-    
+
+                    // Texto | Información de la Tienda
                     p {
                         display: flex;
                         justify-content: flex-start;
                         font-size: small;
-    
+
                         @media screen and (min-width: 480px) {
                             font-size: medium;
                         }
@@ -86,6 +97,5 @@
         }
     }
 }
-
 
 /* Fin de Ubicación | Main */

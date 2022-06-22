@@ -1,20 +1,24 @@
-/* Nosotros | Main*/
+/* Nosotros | Main */
 
+// Barras | Título
 .bar-background {
     @extend %bar-background;
 
     div {
         @extend %bar-div;
 
+        // Estilo | Barras | Texto
         .bar-text {
             @extend %bar-text;
         }
     }
 }
 
+// Contenedor | Artículo | Nosotros
 .article-container {
-    margin: 1rem;
+    margin: 1.5rem;
 
+    // Contenido | Artículo | Nosotros
     .article-content {
         gap: 2rem;
 
@@ -25,18 +29,26 @@
             max-width: 64rem;
         }
 
+        // Posición del Texto | Artículo | Nosotros
         .article-text-container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-bottom: 1rem;
 
+            // Estilo | Artículo | Nosotros
             .article-text {
                 font-family: $secondary-font;
                 text-align: justify;
+                margin-bottom: 0.5rem;
+            }
+
+            .article-text-1 {
+                margin-top: 0.5rem;
             }
         }
 
+        // Contenedor | Imagen | Artículo | Nosotros
         .article-image-container {
             max-width: 100%;
 
@@ -46,6 +58,7 @@
                 align-items: center;
             }
 
+            // Tamaño de Imagen | Artículo | Nosotros
             img {
                 max-width: 100%;
             }
@@ -53,8 +66,9 @@
     }
 }
 
+// Contenedor | <¿Por qué elegirnos?>
 .choosing-us-container {
-    margin: 1rem;
+    margin: 1.5rem;
     padding-bottom: 1rem;
 
     @media screen and (min-width: 768px) {
@@ -69,6 +83,7 @@
         width: 64rem;
     }
 
+    // Estilo del Título | <¿Por qué elegirnos?>
     .choosing-us-text {
         text-align: center;
         font-family: $main-font;
@@ -79,6 +94,7 @@
         }
     }
 
+    // Contenedor | Motivos
     .motives-container {
 
         @media screen and (min-width: 1024px) {
@@ -90,12 +106,14 @@
             align-items: start;
         }
 
+        // Posición | Motivo
         div {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
+            // Imágen | Motivo
             img {
                 max-width: 2rem;
                 max-height: 2rem;
@@ -107,11 +125,13 @@
                 }
             }
 
+            // Título | Motivo
             h3 {
                 font-family: $main-font;
                 margin: 1rem;
             }
 
+            // Texto | Motivo
             p {
                 font-family: $secondary-font;
                 text-align: justify;

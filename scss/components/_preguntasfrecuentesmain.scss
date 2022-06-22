@@ -1,5 +1,6 @@
 /* Preguntas Frecuentes | Main */
 
+// Contenedor | Preguntas Frecuentas
 .faq-container {
     margin: 3rem auto;
     display: flex;
@@ -7,7 +8,7 @@
     align-items: center;
     justify-content: center;
 
-
+    // Acordeón | Preguntas Frecuentes
     .tab {
         font-family: $main-font;
         box-sizing: border-box;
@@ -35,7 +36,7 @@
             font-weight: 500;
             color: nth($colors, 1);
             cursor: pointer;
-    
+
             &::after {
                 display: block;
                 content: "\25B6 \FE0E";
@@ -50,15 +51,16 @@
             overflow: hidden;
             transition: max-height 0.3s;
             max-height: 0;
-    
+
+            // Estilo | Pregunta
             p {
                 font-family: $secondary-font;
                 font-size: medium;
+                text-align: justify;
                 padding: 0.625rem;
             }
         }
     }
 }
-
 
 /* Fin de Preguntas Frecuentes | Main */

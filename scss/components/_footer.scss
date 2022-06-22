@@ -1,5 +1,6 @@
 /* Footer */
 
+// Contenedor | Footer
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@
         grid-column-gap: 1rem;
     }
 
-
+    // Texto | Footer
     .footer-text {
         margin: 1rem;
         font-family: $secondary-font;
@@ -26,6 +27,7 @@
         }
     }
 
+    // Contenedor | <Seguinos en>
     .follow-us-container {
         display: flex;
         flex-direction: column;
@@ -38,6 +40,7 @@
             padding-right: 1rem;
         }
 
+        // Texto | <Seguinos en>
         .follow-us-text {
             text-align: center;
             text-transform: uppercase;
@@ -46,18 +49,18 @@
             color: nth($colors, 2);
         }
 
+        // Contenedor | <Seguinos en> | Íconos
         .follow-us-icon-container {
             display: flex;
             flex-direction: row;
             justify-content: center;
 
+            // Separación entre íconos
             .follow-us-icon {
-                @media screen and (min-width: 768px) {
-                    padding: 0 0.125rem;
-                }
+                padding: 0 0.125rem;
             }
         }
     }
 }
 
-/* Fin de Footer */
+/* Fin | Footer */
